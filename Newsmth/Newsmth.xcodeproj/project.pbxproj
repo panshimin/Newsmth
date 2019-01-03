@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7546F025D5215D1D83EAB3B0 /* libPods-Newsmth.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7BB26E2996AB04DE06139A4 /* libPods-Newsmth.a */; };
 		84F759502146CA1F007F8510 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7594F2146CA1F007F8510 /* AppDelegate.m */; };
 		84F759532146CA1F007F8510 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F759522146CA1F007F8510 /* ViewController.m */; };
 		84F759562146CA1F007F8510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F759542146CA1F007F8510 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		84F7595E2146CA20007F8510 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F7595D2146CA20007F8510 /* main.m */; };
 		84F759682146CA20007F8510 /* NewsmthTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F759672146CA20007F8510 /* NewsmthTests.m */; };
 		84F759732146CA20007F8510 /* NewsmthUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F759722146CA20007F8510 /* NewsmthUITests.m */; };
+		84F7599021475E33007F8510 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7598F21475E33007F8510 /* AFNetworking.framework */; };
+		84F7599121475E33007F8510 /* AFNetworking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7598F21475E33007F8510 /* AFNetworking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84F7598921475AED007F8510 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84F7599121475E33007F8510 /* AFNetworking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		84F7594B2146CA1F007F8510 /* Newsmth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newsmth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7594E2146CA1F007F8510 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +68,10 @@
 		84F7596E2146CA20007F8510 /* NewsmthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsmthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F759722146CA20007F8510 /* NewsmthUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsmthUITests.m; sourceTree = "<group>"; };
 		84F759742146CA20007F8510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F7598F21475E33007F8510 /* AFNetworking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AFNetworking.framework; path = Carthage/Build/iOS/AFNetworking.framework; sourceTree = "<group>"; };
+		D7BB26E2996AB04DE06139A4 /* libPods-Newsmth.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Newsmth.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF09147F4CC886D58B5E3032 /* Pods-Newsmth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsmth.release.xcconfig"; path = "Pods/Target Support Files/Pods-Newsmth/Pods-Newsmth.release.xcconfig"; sourceTree = "<group>"; };
+		F8CD56BEDC92ACAA7050CD45 /* Pods-Newsmth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Newsmth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Newsmth/Pods-Newsmth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F7599021475E33007F8510 /* AFNetworking.framework in Frameworks */,
+				7546F025D5215D1D83EAB3B0 /* libPods-Newsmth.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +108,8 @@
 				84F759662146CA20007F8510 /* NewsmthTests */,
 				84F759712146CA20007F8510 /* NewsmthUITests */,
 				84F7594C2146CA1F007F8510 /* Products */,
+				84F7598E21475D02007F8510 /* Frameworks */,
+				F7505CEE2ABDB6F0C140834E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +157,24 @@
 			path = NewsmthUITests;
 			sourceTree = "<group>";
 		};
+		84F7598E21475D02007F8510 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F7598F21475E33007F8510 /* AFNetworking.framework */,
+				D7BB26E2996AB04DE06139A4 /* libPods-Newsmth.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7505CEE2ABDB6F0C140834E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD56BEDC92ACAA7050CD45 /* Pods-Newsmth.debug.xcconfig */,
+				EF09147F4CC886D58B5E3032 /* Pods-Newsmth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +182,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F759772146CA20007F8510 /* Build configuration list for PBXNativeTarget "Newsmth" */;
 			buildPhases = (
+				C84ED2E0DD9C1B4CE9DA6D17 /* [CP] Check Pods Manifest.lock */,
 				84F759472146CA1F007F8510 /* Sources */,
 				84F759482146CA1F007F8510 /* Frameworks */,
 				84F759492146CA1F007F8510 /* Resources */,
+				84F759802146D244007F8510 /* ShellScript */,
+				84F7598921475AED007F8510 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +302,41 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F759802146D244007F8510 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/Carthage/Build/iOS/AFNetworking.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+		C84ED2E0DD9C1B4CE9DA6D17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Newsmth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84F759472146CA1F007F8510 /* Sources */ = {
@@ -433,11 +514,18 @@
 		};
 		84F759782146CA20007F8510 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8CD56BEDC92ACAA7050CD45 /* Pods-Newsmth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N9MP3Z4L8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Newsmth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +538,18 @@
 		};
 		84F759792146CA20007F8510 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF09147F4CC886D58B5E3032 /* Pods-Newsmth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5N9MP3Z4L8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Newsmth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
