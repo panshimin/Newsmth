@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import <Bugly/Bugly.h>
+
+#define     NSMBuglyAppId     @"df1d9b7157"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    BuglyConfig *buglyConfig = [BuglyConfig new];
+    buglyConfig.debugMode = YES;
+    buglyConfig.channel = @"app-store";
+    buglyConfig.blockMonitorEnable = YES;
+    buglyConfig.blockMonitorTimeout = 0.5;
+    [Bugly startWithAppId:NSMBuglyAppId config:buglyConfig];
     return YES;
 }
 
